@@ -1,5 +1,4 @@
 from PIL import ImageFont,ImageDraw,Image
-import numpy as np
 import os
 
 #Make Custom Dataset
