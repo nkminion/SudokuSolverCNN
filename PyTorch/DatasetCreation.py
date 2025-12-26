@@ -17,6 +17,7 @@ for Font in os.listdir(FontPath):
 				draw = ImageDraw.Draw(img)
 				draw.text((14,14),str(i),font=font,fill=255,anchor='mm')
 				img.save(os.path.join(ImgDir,f"{Font}.png"))
+				print(f"Created Images for {Font}")
 		except (OSError,IOError):
 			print(f"Could not load font {Font}!")
 
