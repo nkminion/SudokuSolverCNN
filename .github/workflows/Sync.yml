@@ -9,6 +9,11 @@ on:
 jobs:
     HuggingFaceSync:
         runs-on: ubuntu-latest
+
+        environment:
+            name: Deployment
+            url: https://huggingface.co/spaces/nkminion/SudokuSolverCNN
+
         steps:
             - uses: actions/checkout@v3
               with:
