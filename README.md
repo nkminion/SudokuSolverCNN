@@ -4,9 +4,9 @@ emoji: 🙃
 colorFrom: blue
 colorTo: green
 sdk: docker
-suggested_hardware: "cpu-basic"
 app_file: Server.py
 pinned: true
+short_description: Solves Sudoku Puzzles
 ---
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
