@@ -1,0 +1,131 @@
+
+@font-face
+{
+	font-family: 'Lato Light';
+	src: url('Lato-Light.ttf');
+}
+
+body
+{
+	background-color: #0a0a0a;
+	position: absolute;
+	color:aliceblue;
+	width: 100%;
+	height: 85vh;
+	font-family: 'Lato Light';
+	margin: 0.14%;
+}
+
+h1
+{
+	font-size: 48px;
+	margin-top: 25px;
+	color: #0083FF;
+	text-align: center;
+	font-style: bold;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+button
+{
+	height: 50px;
+	width: 100px;
+	margin: 10px;
+	transition: all 0.5s;
+	border: 3px solid #0083FF;
+	border-radius: 5%;
+	background-color: #161616;
+	color: aliceblue;
+	font-family: 'Lato Light';
+	font-size: 18px;
+}
+
+button:hover
+{
+	transform: scale(1.2);
+	border-color: #5d00ff;
+}
+
+button:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+a
+{
+	color: aliceblue;
+	text-decoration: none;
+}
+
+p
+{
+	font-size: 24px;
+}
+
+img
+{
+	border: 3px solid aliceblue;
+}
+
+.Container
+{
+	display: flex;
+}
+
+.Side
+{
+	width: 50%;
+	margin-left: 2%;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.Text
+{
+	text-align: center;
+}
+
+.Cell
+{
+    border: 1px solid aliceblue; /* Thin grey borders for normal cells */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+	width: 50px;
+	height: 50px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.Cell:nth-child(3n)
+{
+    border-right: 3px solid aliceblue;
+}
+
+.Cell:nth-child(9n)
+{
+    border-right: none;
+}
+
+.Cell:nth-child(n+19):nth-child(-n+27),
+.Cell:nth-child(n+46):nth-child(-n+54)
+{
+    border-bottom: 3px solid aliceblue;
+}
+
+#SudokuGrid
+{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr); /* 9 Equal Columns */
+    width: 450px;
+    height: 450px;
+    border: 3px solid aliceblue;
+    background-color: #0a0a0a;
+}
+
+#FileInput
+{
+	display: none;
+}
